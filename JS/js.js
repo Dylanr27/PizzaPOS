@@ -29,7 +29,7 @@ pepperoniButton.addEventListener('click', function(){
         subTotal -= 2;
         pPepperoni.checked = false;
     }
-    pizzaOrder.innerText += ("===============\n");
+    pizzaOrder.innerText += ("==================\n");
     DisplayCost();
 });
 
@@ -71,7 +71,7 @@ meatLoversButton.addEventListener('click', function(){
         subTotal -= 2;
         mHam.checked = false;
     }
-    pizzaOrder.innerText += ("===============\n");
+    pizzaOrder.innerText += ("==================\n");
     DisplayCost();
 });
 
@@ -111,7 +111,7 @@ supremeButton.addEventListener('click', function(){
         pizzaOrder.innerText += ("No Veggies\n")
         sRemoveVeggies.checked = false;
     }
-    pizzaOrder.innerText += ("===============\n");
+    pizzaOrder.innerText += ("==================\n");
     DisplayCost();
 });
 
@@ -139,7 +139,7 @@ hawaiianButton.addEventListener('click', function(){
         pizzaOrder.innerText += ("No Pineapple\n")
         hPineapple.checked = false;
     }
-    pizzaOrder.innerText += ("===============\n");
+    pizzaOrder.innerText += ("==================\n");
     DisplayCost();
 });
 
@@ -178,7 +178,7 @@ tacoButton.addEventListener('click', function(){
         pizzaOrder.innerText += ("No Onions\n")
         tOnions.checked = false;
     }
-    pizzaOrder.innerText += ("===============\n");
+    pizzaOrder.innerText += ("==================\n");
     DisplayCost();
 });
 
@@ -217,7 +217,7 @@ cbrButton.addEventListener('click', function(){
         pizzaOrder.innerText += ("No Onions\n")
         cbrOnions.checked = false;
     }
-    pizzaOrder.innerText += ("===============\n");
+    pizzaOrder.innerText += ("==================\n");
     DisplayCost();
 });
 
@@ -287,10 +287,10 @@ submitAccount.addEventListener('click', function(){
         alert("Please enter all fields");
         return;
     }
-    if(passwordDisplay.value == ""){
-        alert("Please enter all fields");
-        return;
-    }
+    // if(passwordDisplay.value == ""){
+    //     alert("Please enter all fields");
+    //     return;
+    // }
     alert("Thank you for joining the rewards program for Dyl's Pizzeria :)\n" +
           "Account Details:\nFirst Name: " + firstNameDisplay.value +
           "\nLast Name: " + lastNameDisplay.value +
