@@ -1,155 +1,217 @@
-@media (min-width: 1180px) {
-  * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-  }
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+/* Navigation */
+.no-list-style {
+  list-style: none;
+}
 
-  .no-list-style {
-    list-style: none;
-  }
-  #nav {
-    font-variant: small-caps;
-    font-family: serif;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgba(200, 0, 0, 95%);
-    margin: 0 auto;
-  }
-  #nav h1 {
-    color: rgb(206, 205, 205);
-    margin-left: 3%;
-  }
-  #nav ul {
-    display: grid;
-    grid-template-columns: 50% auto auto auto auto;
-  }
-  #nav a {
-    display: block;
-    color: rgb(206, 205, 205);
-    text-align: center;
-    text-decoration: none;
-    font-size: x-large;
-    padding: 5%;
-  }
-  body {
-    background-color: lightgray;
-  }
-  .page-layout {
-    display: grid;
-    grid-template-columns: 70% auto;
-    column-gap: 50px;
-  }
-  #main-container {
-    margin-top: 8%;
-    margin-left: 3%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 25px;
-  }
-  .pizza-container {
-    border: 0px solid rgb(0, 0, 0);
-    border-radius: 3%;
-    box-shadow: black -5px 5px 15px 0;
-    margin-bottom: 25px;
-    background-color: rgba(200, 28, 28, 95%);
-    color: rgb(206, 205, 205);
-  }
-  .pizza-container h3 {
-    font-size: larger;
-    display: block;
-    text-align: center;
-    text-shadow: black 0px 0px 2px;
-  }
-  .pizza-container img {
-    width: 100%;
-    margin-bottom: 0;
-  }
-  .pizza-container label {
-    padding-left: 5px;
-  }
-  .button {
-    background-color: lightcoral;
-    border-radius: 40px;
-    border: 0;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 200;
-    padding: 0.5rem 0.5rem;
-    text-align: center;
-    text-transform: uppercase;
-    white-space: nowrap;
-  }
-  .button--block {
-    width: 90%;
-    margin: 10px;
-  }
-  .toppings {
-    font-size: large;
-    text-shadow: black 0px 0px 2px;
-    display: block;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    margin-left: 15%;
-  }
-  .order-sheet {
-    border: 1px solid black;
-    height: 95%;
-    margin-top: 20%;
-    margin-right: 25px;
-  }
-  .order-sheet h2 {
-    display: block;
-    text-align: center;
-  }
-  .h2-break {
-    margin: 0;
-  }
-  .order-sheet h3 {
-    font-size: larger;
-    display: block;
-    text-align: center;
-  }
-  .order {
-    height: 33%;
-    margin-bottom: 2%;
-    border-bottom: 1px solid black;
-  }
-  .order-item {
-    margin-top: 5px;
-    margin-right: 4%;
-    display: block;
-    text-align: end;
-  }
-  .delivery-method {
-    display: flex;
-  }
-  .delivery-method img {
-    padding: 5px;
-    border-radius: 15px;
-    width: 50%;
-  }
-  input[type="radio"] {
-    margin-left: 18px;
-  }
-  hr {
-    height: 1px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    background-color: black;
-    border: none;
-  }
-  .order-summary {
-    display: block;
-    text-align: center;
-    margin-top: 5%;
-    margin-left: 5%;
-  }
-  .account-item {
-    margin-top: 5px;
-    margin-right: 8%;
-    display: block;
-    text-align: end;
-  }
+#nav {
+  font-variant: small-caps;
+  font-family: serif;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(200, 0, 0, 95%);
+  margin: 0 auto;
+}
+
+#nav h1 {
+  color: rgb(206, 205, 205);
+  margin-left: 3%;
+}
+
+#nav ul {
+  display: grid;
+  grid-template-columns: 50% auto auto auto auto;
+}
+
+#nav a {
+  display: block;
+  color: rgb(206, 205, 205);
+  text-align: center;
+  text-decoration: none;
+  font-size: x-large;
+  padding: 5%;
+}
+
+/* background color */
+body {
+  background-color: lightgray;
+  font-family: sans-serif;
+}
+
+/* grid layout */
+#page--layout {
+  display: grid;
+  grid-template-columns: 70% auto;
+  column-gap: 50px;
+}
+
+/* pizza container layout */
+#main--container {
+  margin-top: 8%;
+  margin-left: 3%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 25px;
+  min-width: 50vw;
+  min-width: 855px;
+}
+
+/* pizza card styles */
+.pizza--container {
+  border: 0px solid rgb(0, 0, 0);
+  border-radius: 3%;
+  box-shadow: black -5px 5px 15px 0;
+  margin-bottom: 25px;
+  background-color: rgba(200, 28, 28, 95%);
+  color: rgb(206, 205, 205);
+}
+
+.pizza--container h3 {
+  font-size: larger;
+  display: block;
+  text-align: center;
+  text-shadow: black 0px 0px 2px;
+}
+
+.pizza--container img {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.pizza--container label {
+  padding-left: 5px;
+}
+
+.button {
+  background-color: lightcoral;
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 200;
+  padding: 0.5rem 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.button--block {
+  width: 90%;
+  margin: 10px;
+}
+
+.toppings {
+  font-size: large;
+  text-shadow: black 0px 0px 2px;
+  display: block;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 15%;
+}
+
+/* order sheet styles */
+#order-sheet {
+  border: 2px solid black;
+  border-radius: 5px;
+  height: 95%;
+  margin-top: 20%;
+  margin-right: 25px;
+  background-color: rgba(0, 0, 0, 0.2);
+  min-width: 305px;
+}
+
+#order-sheet h2 {
+  display: block;
+  text-align: center;
+}
+
+.h2-break {
+  margin: 0;
+}
+
+#order-sheet h3 {
+  font-size: larger;
+  display: block;
+  text-align: center;
+}
+
+/* div for order display */
+#order {
+  height: 300px;
+  text-align: center;
+  margin-bottom: 2%;
+  border-bottom: 2px solid black;
+  overflow: auto;
+  overflow-x: hidden;
+}
+/* #order::hover{
+    overflow-y: scroll;
+  } */
+
+/* delivery method */
+#delivery-method {
+  display: flex;
+}
+
+#delivery-method img {
+  padding: 5px;
+  border-radius: 15px;
+  width: 50%;
+}
+
+input[type="radio"] {
+  margin-left: 18px;
+}
+
+/* container seperator */
+hr {
+  height: 1.5px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  background-color: black;
+  border: none;
+}
+
+/* order cost details */
+#order-summary {
+  display: block;
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.order-item {
+  margin-top: 5px;
+  margin-right: 15%;
+  display: block;
+  text-align: right;
+}
+
+#submit-order,
+#clear-order {
+  margin-top: 5px;
+  width: 45%;
+  margin-right: 4%;
+  text-align: center;
+}
+
+/* create account */
+.account-item {
+  margin-top: 5px;
+  margin-right: 8%;
+  display: block;
+  text-align: end;
+}
+#submit-account {
+  display: block;
+  width: 70%;
+  text-align: center;
+  margin-bottom: 1%;
+  margin-top: 2%;
+  margin-left: 15%;
 }
