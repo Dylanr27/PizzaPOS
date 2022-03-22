@@ -287,10 +287,10 @@ submitAccount.addEventListener('click', function(){
         alert("Please enter all fields");
         return;
     }
-    // if(passwordDisplay.value == ""){
-    //     alert("Please enter all fields");
-    //     return;
-    // }
+    if(passwordDisplay.value == ""){
+        alert("Please enter all fields");
+        return;
+    }
     alert("Thank you for joining the rewards program for Dyl's Pizzeria :)\n" +
           "Account Details:\nFirst Name: " + firstNameDisplay.value +
           "\nLast Name: " + lastNameDisplay.value +
